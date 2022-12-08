@@ -1,13 +1,15 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login  from './components/login';
+import Textutiles from './Textutiles'
+import  About from './components/About'
 
 export default function App() {
   return (
     <BrowserRouter>
     <Routes>
       
-      <Route path="/" element={<Login />} />
+      <Route  exact  path="/" element={<Textutiles/>} />
+      <Route  exact  path="/about" element={<About/>} />
     </Routes>
   </BrowserRouter>
   
